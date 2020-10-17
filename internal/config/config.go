@@ -98,6 +98,7 @@ func setDefaults(cfg *Config) {
 	if len(cfg.Repository.RefSpecs) == 0 {
 		cfg.Repository.RefSpecs = []string{
 			"+refs/heads/*:refs/heads/*",
+			"+refs/pull/*:refs/remotes/origin/pull/*",
 		}
 	}
 
